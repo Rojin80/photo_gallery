@@ -29,9 +29,8 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   flutter:
-    assets:
-      - assets/
     sdk: flutter
+  carousel_slider: ^4.2.1
 
 
 
@@ -56,11 +55,19 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  assets:
+    - assets/
+  fonts:
+    - family: myFont1
+      fonts:
+        - asset: fonts/my-font.ttf
+  uses-material-design: true
+
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
-  uses-material-design: true
+
 
   # To add assets to your application, add an assets section, like this:
   # assets:
